@@ -42,6 +42,15 @@ class CityListTest {
     }
 
     @Test
+    void testfirstCity() {
+        CityList cityList = mockCityList();
+        City city = new City("Edmonton", "Alberta");
+
+        assertEquals(0, city.compareTo(cityList.getfirst()));
+    }
+
+
+    @Test
     void testHasCity() {
         CityList cityList = mockCityList();
 
