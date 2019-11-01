@@ -34,6 +34,14 @@ public class CityList {
     }
 
     /**
+     * return first city
+     * @return
+     */
+    public City getfirst(){
+        return cities.get(0);
+    }
+
+    /**
      * This method checks to see if a city already exists in the list
      * @param city
      *      City to check
